@@ -13,9 +13,8 @@ CREATE TABLE Persons (
 	Email varchar(255),
 	TypeID varchar(255),
 	CreationDate date,
-	TypeID_NumID AS TypeID + '-' + NumberID,
-	FirstNm_LastNm AS FirstName + ' ' + LastName,
-	
+	TypeNumID AS TypeID + '-' + NumberID,
+	FullName AS FirstName + ' ' + LastName
 );
 CREATE PROCEDURE SelectAllPersons AS
 	SELECT TypeID_NumID, FirstNm_LastNm FROM [dbo].[Persons]
@@ -28,7 +27,7 @@ CREATE TABLE Users(
 	Id int NOT NULL PRIMARY KEY,
 	Username varchar(255),
 	Passwrd varchar(255),
-	CreationDate date,
+	CreationDate date
 );	
 ```
 
