@@ -4,7 +4,7 @@ This is an example doing a simple API rest using ASP.NET
 ### SQL Commands Schema
 Person entity:
 
-`
+```
 CREATE TABLE Persons (
 	Id int NOT NULL PRIMARY KEY,
 	FirstName varchar(255),
@@ -20,15 +20,15 @@ CREATE TABLE Persons (
 CREATE PROCEDURE SelectAllPersons AS
 	SELECT TypeID_NumID, FirstNm_LastNm FROM [dbo].[Persons]
 GO;
-`
+```
 
 User entity:
-`
+```
 CREATE TABLE Users(
 	Id int NOT NULL PRIMARY KEY,
 	Username varchar(255),
 	Passwrd varchar(255),
 	CreationDate date,
 );	
-`
+```
 
