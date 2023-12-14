@@ -17,7 +17,7 @@ CREATE TABLE Persons (
 	FullName AS FirstName + ' ' + LastName
 );
 CREATE PROCEDURE SelectAllPersons AS
-	SELECT TypeID_NumID, FirstNm_LastNm FROM [dbo].[Persons]
+	SELECT TypeID_NumID, FirstNm_LastNm FROM Persons
 GO;
 ```
 
