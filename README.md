@@ -1,6 +1,9 @@
 # API using ASP.NET
 This is an example doing a simple API rest using ASP.NET
-
+### Run Commands
+`
+dotnet run --launch-profile https
+`
 ### SQL Commands Schema
 Person entity:
 
