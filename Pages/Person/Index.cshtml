@@ -8,7 +8,9 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+<div class="d-flex justify-content-around">
+    <a class="btn btn-primary" asp-page="Create">Create New</a>
+</div>
 </p>
 <table class="table">
     <thead>
@@ -41,38 +43,39 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.Person) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumberID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TypeID)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreationDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FullName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TypeNumID)
-            </td>
-            <td>
-                <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@item.Id">Edit</a> 
-                <a class="btn btn-info" asp-page="./Details" asp-route-id="@item.Id">Details</a> 
-                <a class="btn btn-warning" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.Person)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreationDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeNumID)
+                </td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@item.Id">Edit</a>
+                    <a class="btn btn-info" asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                    <a class="btn btn-warning" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

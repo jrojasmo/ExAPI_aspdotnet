@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4OPrNuEETQtbTBStSEQcKv3io1WUwmhW/Vi8wQmCRHvDqgWHZ6zl5tJNbNUVcGbXOSi7a+akXagX16hFhHu4ZQ==",
+  "dgSpecHash": "RNv+IXf764jN1IEDtaw5ZPU6nPTY/Ptg242wTJz/2O2n++jGhuZyUgNT2mG8ZAUWirlwRnTDsquP2Qcv7dTxIQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jesus\\Desktop\\Code Test\\aspdotnet\\api_exampleASP\\api_exampleASP.csproj",
   "expectedPackageFiles": [
@@ -103,6 +103,7 @@
     "C:\\Users\\jesus\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.24.0\\microsoft.identitymodel.protocols.6.24.0.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.24.0\\microsoft.identitymodel.protocols.openidconnect.6.24.0.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.24.0\\microsoft.identitymodel.tokens.6.24.0.nupkg.sha512",
+    "C:\\Users\\jesus\\.nuget\\packages\\microsoft.jsinterop\\8.0.0\\microsoft.jsinterop.8.0.0.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\microsoft.net.stringtools\\17.7.2\\microsoft.net.stringtools.17.7.2.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

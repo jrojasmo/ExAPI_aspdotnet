@@ -8,8 +8,12 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+<div class="d-flex justify-content-around">
+    <a class="btn btn-primary" asp-page="Create">Create New</a>
+    <a class="btn btn-info" asp-page="Login">Try Login</a>
+</div>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -26,23 +30,24 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.User) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Username)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Passwrd)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreationDate)
-            </td>
-            <td>
-                <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@item.Id">Edit</a> 
-                <a class="btn btn-info" asp-page="./Details" asp-route-id="@item.Id">Details</a> 
-                <a class="btn btn-warning" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.User)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Passwrd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreationDate)
+                </td>
+                <td>
+                    <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@item.Id">Edit</a>
+                    <a class="btn btn-info" asp-page="./Details" asp-route-id="@item.Id">Details</a>
+                    <a class="btn btn-warning" asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

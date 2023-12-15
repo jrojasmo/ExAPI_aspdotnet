@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Api_ExampleASP.Models;
+using System.Drawing.Printing;
 
 namespace api_exampleASP.Pages_User
 {
@@ -29,6 +30,7 @@ namespace api_exampleASP.Pages_User
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
+            System.Console.WriteLine(ModelState.IsValid);
             if (!ModelState.IsValid)
             {
                 return Page();

@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.JSInterop": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.0, )"

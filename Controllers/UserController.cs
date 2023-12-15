@@ -83,6 +83,18 @@ namespace api_exampleASP.Controllers
             return CreatedAtAction(nameof(GetUser), new { id = user.Id }, user);
         }
 
+        [HttpPost("Login")]
+        public async Task<ActionResult<User>> LoginUser(User userIn)
+        {
+            var user = await _context.Users.FirstOrDefaultAsync(u => u.Username == userIn.Username && u.Passwrd == userIn.Passwrd);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return user;
+        }
+
         // DELETE: api/User/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
